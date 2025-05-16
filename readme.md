@@ -44,7 +44,7 @@ tcpdump -i eth0 host host.docker.internal and port 3000
 ```
 netstat -an | grep 3000
 
-# 通信がスタック週のnetstatの結果
+# 通信がスタックした瞬間のnetstatの結果
 # SYN_SENTの状態が続く
 Proto Recv-Q Send-Q Local Address           Foreign Address         State
 tcp        0      1 b2f4e21290c6:48282      192.168.65.254:3000     SYN_SENT
