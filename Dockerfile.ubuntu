@@ -1,0 +1,6 @@
+FROM ubuntu:25.10
+
+RUN apt update && apt install -y net-tools procps iputils-ping dnsutils tcpdump curl vim
+
+WORKDIR /app
+ADD . .
