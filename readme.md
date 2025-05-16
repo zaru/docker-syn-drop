@@ -24,7 +24,7 @@ docker compose exec -it ubuntu bash
 - 1000リクエストに1回程度、通信がスタックするはず
 
 ```
-bash ./requeset.sh
+bash ./request.sh
 ```
 
 ### 通信がスタックしているときの状況
