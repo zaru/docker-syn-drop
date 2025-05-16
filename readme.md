@@ -1,10 +1,29 @@
+## 再現手順
+
+### ダミーサーバ起動
+
+- Dockerコンテナから通信するWebサーバをHost側で起動
+
+```
+# ホスト側で実行
+node server.js
+```
+
+### Docker環境を起動
+
 ```
 docker compose up -d
+
+# ubuntuコンテナに入る
 docker compose exec -it ubuntu bash
 ```
 
+### Ubuntuコンテナに入ったら、以下のコマンドを実行
+
+- Webサーバにリクエストをし続けるスクリプトを実行する
+- 1000リクエストに1回程度、通信がスタックするはず
+
 ```
-# 1000階に1回くらい通信がスタックする
 bash ./requeset.sh
 ```
 
